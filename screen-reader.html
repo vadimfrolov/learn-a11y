@@ -42,53 +42,54 @@
           <h2>Example to Fix</h2>
           <!-- Non-semantic website example -->
           <div class="practice-area">
-            <div class="header">
-              <span class="title">My Website</span>
-            </div>
+            <header class="header">
+              <h1 class="title">My Website</h1>
+            </header>
 
-            <div class="nav">
-              <div>Home</div>
-              <div>About</div>
-              <div>Contact</div>
-            </div>
+            <nav class="nav">
+              <a href="/home/">Home</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+            </nav>
 
-            <div class="main-content">
-              <div class="section">
+            <main class="main-content">
+              <section class="section">
                 <span class="big-text">Welcome to our page</span>
                 <div class="text">Here is some important information.</div>
-              </div>
+              </section>
 
-              <div class="section">
+              <section class="section">
                 <span class="big-text">Latest Updates</span>
                 <div class="text">Check out our new features!</div>
-              </div>
+              </section>
 
               <div class="form-container">
                 <div class="form-title">Contact Us</div>
                 <div>
-                  <span>Name:</span>
-                  <input type="text" />
+                  <label for="name">Name:</label>
+                  <input id="name" type="text" />
+
                 </div>
                 <div>
-                  <span>Email:</span>
-                  <input type="text" />
+                  <label for="email">Email:</label>
+                  <input id="email" type="text" />
                 </div>
                 <div>
-                  <span>Message:</span>
-                  <input type="text" />
+                  <label for="message">Message:</label>
+                  <input id="message" type="text" />
                 </div>
                 <div>
-                  <span>Subscribe to Newsletter</span>
-                  <input type="checkbox" />
+                  <label for="subToNews">Subscribe to Newsletter</label>
+                  <input id="subToNews" type="checkbox" />
                 </div>
                 <div>
-                  <div onclick="alert('Form submitted!')" class="submit-button">
+                  <button  aria-label="submit" onclick="alert('Form submitted!')" class="submit-button">
                     Submit Form
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
+          </main>
         </section>
 
         <section class="hints">
