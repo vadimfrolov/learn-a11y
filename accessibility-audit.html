@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
     />
     <title>Accessibility Audits - Web Accessibility Workshop</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       /* Intentionally poor color contrast */
       .hero {
-        background: #e2e2e2;
-        color: #939393;
+        background: white;
+        color: black;
         text-align: center;
         padding: 3rem;
         margin: -2rem -2rem 2rem -2rem;
@@ -60,13 +60,13 @@
       /* Small text that's hard to read */
       .footer {
         font-size: 11px;
-        color: #999;
+        color: black;
         text-align: center;
         margin-top: 3rem;
       }
 
       .menu-button {
-        background: #3498db;
+        background: blue;
         color: white;
         border: none;
         padding: 0.5rem;
@@ -90,7 +90,7 @@
       }
     </style>
   </head>
-  <body aria-hidden="true">
+  <body>
     <a href="index.html" class="back-link">← Back to Workshop Index</a>
     <main>
       <h1>Exercise 6: Accessibility Audits</h1>
@@ -101,7 +101,7 @@
 
       <!-- Missing alt text -->
       <div class="hero">
-        <img src="https://picsum.photos/800/400" width="800" height="400" />
+        <img alt="picture of nature" src="https://picsum.photos/800/400" width="800" height="400" />
         <div onclick="alert('clicked!')" style="cursor: pointer">
           Click here to learn more
         </div>
@@ -123,7 +123,7 @@
         <div class="card">
           <div class="feature-image"></div>
           <div style="font-size: 20px; font-weight: bold">Feature 1</div>
-          <div style="color: #888">Description of feature 1 goes here</div>
+          <div style="color: black">Description of feature 1 goes here</div>
           <div
             onclick="location.href='#'"
             style="color: blue; text-decoration: underline; cursor: pointer"
@@ -135,7 +135,7 @@
         <div class="card">
           <div class="feature-image"></div>
           <div style="font-size: 20px; font-weight: bold">Feature 2</div>
-          <div style="color: #888">Description of feature 2 goes here</div>
+          <div style="color: black">Description of feature 2 goes here</div>
           <div
             onclick="location.href='#'"
             style="color: blue; text-decoration: underline; cursor: pointer"
@@ -147,7 +147,7 @@
         <div class="card">
           <div class="feature-image"></div>
           <div style="font-size: 20px; font-weight: bold">Feature 3</div>
-          <div style="color: #888">Description of feature 3 goes here</div>
+          <div style="color: black">Description of feature 3 goes here</div>
           <div
             onclick="location.href='#'"
             style="color: blue; text-decoration: underline; cursor: pointer"
@@ -167,14 +167,14 @@
           <input type="text" placeholder="Enter your email" />
         </div>
         <div>
-          <input type="checkbox" />
-          <span style="color: #666">I agree to receive emails</span>
+          <input id="submit" type="checkbox" />
+          <label for="submit" style="color: #666">I agree to receive emails</label>
         </div>
         <div style="margin-top: 1rem">
           <div
             onclick="alert('Subscribed!')"
             style="
-              background: #3498db;
+              background: blue;
               color: white;
               padding: 0.5rem 1rem;
               display: inline-block;
@@ -188,15 +188,15 @@
 
       <!-- Social media links without proper labels -->
       <div class="social-links" style="text-align: center; margin-top: 2rem">
-        <img src="https://picsum.photos/32/32" />
-        <img src="https://picsum.photos/32/32" />
-        <img src="https://picsum.photos/32/32" />
+        <img alt="picture of nature" src="https://picsum.photos/32/32" />
+        <img alt="picture of nature" src="https://picsum.photos/32/32" />
+        <img alt="picture of nature" src="https://picsum.photos/32/32" />
       </div>
 
       <div class="footer">
         Copyright © 2024. All text on this page is hard to read due to small
         size and poor contrast.
-        <div style="color: #ccc">
+        <div style="color: black">
           Privacy Policy | Terms of Service | Contact Us
         </div>
       </div>
